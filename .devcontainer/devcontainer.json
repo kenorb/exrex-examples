@@ -22,9 +22,11 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "apt-get update && apt-get install -y rename && pip install exrex",
+	"postCreateCommand": "apt-get update && apt-get install -y rename",
 	"features": {
-		"ghcr.io/devcontainers/features/python:1": {},
+		"ghcr.io/devcontainers/features/python:1": {
+			"installPackages": ["exrex"]
+		},
 		"ghcr.io/devcontainers-extra/features/pipx-package:1": {}
 	},
 
