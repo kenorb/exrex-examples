@@ -23,6 +23,9 @@
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "apt-get update && apt-get install -y rename && pip install exrex",
+	"features": {
+		"ghcr.io/devcontainers/features/python:1": {}
+	},
 
 	// Configure tool-specific properties.
 	// "customizations": {},
