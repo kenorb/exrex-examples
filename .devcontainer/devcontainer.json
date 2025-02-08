@@ -22,7 +22,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "apt-get update && apt-get install -y rename",
+	"postCreateCommand": "apt-get update && apt-get install -y rename vim",
 	"features": {
 		"ghcr.io/devcontainers/features/python:1": {
 			"installPackages": ["exrex"]
