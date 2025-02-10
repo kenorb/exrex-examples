@@ -90,4 +90,4 @@ c_euro='€(43|$,|,|/.,)'
 chars="($c_minus|$c_equals|$c_section|$c_exclaim|$c_at|$c_pound|$c_dollar|$c_percent|$c_caret|$c_amp|$c_star|$c_lparen|$c_rparen|$c_underscore|$c_plus|$c_equals2|$c_lbrace|$c_lbracket|$c_rbrace|$c_semicolon|$c_colon|$c_squote|$c_dquote|$c_backslash|$c_pipe|$c_comma|$c_lt|$c_dot|$c_gt|$c_slash|$c_question|$c_plusminus|$c_hash|$c_euro)"
 
 exrex $* \
-    "(?P<keys>$letters|$digits|$chars){1}(?P=keys){1,2}"
+    "(?P<keys>$letters|$digits|$chars){1}(?P=keys){0,2}"
