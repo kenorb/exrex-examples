@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # Generate 2-digit patterns repeated 0-3 times
-# Count: 100
+# Count: 400
 # Examples: 12, 1212, 121212, 12121212
 
 # Pattern: 
