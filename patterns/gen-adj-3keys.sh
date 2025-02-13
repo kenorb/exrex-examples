@@ -6,9 +6,24 @@
 # - ewqewq
 # - cxzcxzcxz
 
-q='q(we|ws|wa|az|qa|12)'
-w='w(er|qe|as|sd|wa|ws|wd|eq|23)'
+q_d='q([wsx]{2})' # Diagonal keys with 'q'
+q_h='q([wwe]{2})' # Horizontal keys with 'q'
+q_dn='q([waz]{2}|[was]{2}|[wa`]{2})' # Downwards keys with 'q'
+q_t='q([wwa]{2}|[w12]{2}|[w2w]{2})' # Triangle keys with 'q'
+q_up='q([w1`]{2})' # Upwards keys with 'q'
+q_v='q([waz]{2})' # Vertical keys with 'q'
+q="($q_d|$q_h|$q_dn|$q_t|$q_up|$q_v)" # Combine all 'q' patterns
+
+w_d='w([dx]{2}|[dc]{2}|[sd]{2}|[sz]{2})' # Diagonal keys with 'w'
+w_h='w([er]{2}|[qe]{2})' # Horizontal keys with 'w'
+w_dn='w([sx]{2})' # Downwards keys with 'w'
+w_t='w([was]{2}|[wqa]{2}|[wq2]{2}|[w23]{2}|[w3e]{2}|[wes]{2})' # Triangle keys with 'w'
+w_up='w([w21]{2})' # Upwards keys with 'w'
+w_v='w([wsx]{2})' # Vertical keys with 'w'
+w="($w_d|$w_h|$w_dn|$w_t|$w_up|$w_v)" # Combine all 'w' patterns
+
 e='e(rt|wr|sd|df|ew|es|ed|ef|34)'
+
 r='r(ty|er|df|fg|re|rf|rt|45)'
 t='t(yu|rt|fg|gh|tr|tf|tg|56)'
 y='y(ui|ty|gh|hj|yt|yg|yh|67)'
